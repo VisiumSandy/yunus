@@ -1,1 +1,359 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Devis Gratuit | YNS LAZARO – Maçonnerie Nevers</title>
+  <meta name="description" content="Contactez YNS LAZARO pour un devis gratuit. Maçonnerie, isolation, démolition à Nevers (58). Réponse sous 24h. Téléphone : 07 49 45 75 67." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .contact-page-hero {
+      background: var(--dark2);
+      padding: 140px 0 80px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .contact-page-hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(245,197,24,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .badge-free {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(245,197,24,0.12);
+      border: 1px solid rgba(245,197,24,0.3);
+      color: var(--yellow);
+      padding: 8px 20px;
+      border-radius: 100px;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .call-cta-box {
+      background: var(--yellow);
+      border-radius: 6px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .call-cta-box .icon { font-size: 2rem; flex-shrink: 0; }
+    .call-cta-box h4 {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(0,0,0,0.6);
+      margin-bottom: 4px;
+    }
+    .call-cta-box a {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--black);
+      letter-spacing: 0.04em;
+      transition: var(--transition);
+    }
+    .call-cta-box a:hover { opacity: 0.7; }
+    .hours-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .hour-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: var(--dark3);
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+    }
+    .hour-row .day { color: var(--grey3); }
+    .hour-row .time { color: var(--white); font-weight: 500; }
+    .hour-row.closed .time { color: var(--grey3); }
+    @media (max-width: 480px) { .hours-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────────── -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-name">YNS <span>LAZARO</span></span>
+      <span class="logo-sub">Maçonnerie & Bâtiment</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-outline btn-sm">Devis gratuit</a>
+      <a href="tel:0749457567" class="btn btn-yellow btn-sm">📞 07 49 45 75 67</a>
+    </div>
+    <div class="hamburger" role="button" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav">
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="realisations.html">Réalisations</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:0749457567" class="btn btn-yellow">📞 Appeler maintenant</a>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────────── -->
+<section class="contact-page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>/</span>
+      <span>Contact</span>
+    </div>
+    <div class="badge-free">⚡ Devis 100% gratuit &amp; sans engagement</div>
+    <h1>Contactez-<br><span class="yellow">nous</span></h1>
+    <p style="color:var(--grey3);max-width:540px;margin-top:16px;">Remplissez le formulaire ou appelez-nous directement. Nous répondons à toutes vos demandes sous 24h à 48h maximum.</p>
+  </div>
+</section>
+
+<!-- ── CONTACT SECTION ──────────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Left: Info -->
+      <div class="contact-info">
+
+        <!-- Call CTA -->
+        <div class="call-cta-box reveal">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Appel direct</h4>
+            <a href="tel:0749457567">07 49 45 75 67</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-info-icon">✉️</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:varto58@outlook.com">varto58@outlook.com</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-info-icon">📍</div>
+          <div>
+            <h4>Zone d'intervention</h4>
+            <p>Nevers &amp; tous les alentours (Nièvre — 58)</p>
+          </div>
+        </div>
+
+        <div class="contact-info-item reveal">
+          <div class="contact-info-icon">📸</div>
+          <div>
+            <h4>Instagram</h4>
+            <a href="https://www.instagram.com/yns_lazaro58" target="_blank" rel="noopener">@yns_lazaro58</a>
+          </div>
+        </div>
+
+        <!-- Horaires -->
+        <div class="reveal" style="background:var(--dark2);border:1px solid rgba(255,255,255,0.06);border-radius:6px;padding:24px;">
+          <h4 style="font-family:var(--font-display);font-size:0.85rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--grey3);margin-bottom:16px;">🗓️ Horaires d'ouverture</h4>
+          <div class="hours-grid">
+            <div class="hour-row"><span class="day">Lundi</span><span class="time">08h – 18h</span></div>
+            <div class="hour-row"><span class="day">Mardi</span><span class="time">08h – 18h</span></div>
+            <div class="hour-row"><span class="day">Mercredi</span><span class="time">08h – 18h</span></div>
+            <div class="hour-row"><span class="day">Jeudi</span><span class="time">08h – 18h</span></div>
+            <div class="hour-row"><span class="day">Vendredi</span><span class="time">08h – 18h</span></div>
+            <div class="hour-row"><span class="day">Samedi</span><span class="time">08h – 17h</span></div>
+            <div class="hour-row closed"><span class="day">Dimanche</span><span class="time">Fermé</span></div>
+          </div>
+        </div>
+
+        <!-- Social proof mini -->
+        <div class="reveal" style="background:var(--dark3);border-radius:6px;padding:20px 24px;display:flex;align-items:center;gap:16px;">
+          <div style="font-size:2rem;">⭐</div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:1.1rem;font-weight:900;color:var(--yellow);">5/5 — Avis Google</div>
+            <div style="font-size:0.85rem;color:var(--grey3);">Clients satisfaits à Nevers &amp; alentours</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-box reveal">
+        <h3>Demande de <span class="yellow">devis gratuit</span></h3>
+        <p>Décrivez votre projet et nous vous rappelons sous 24h pour établir votre devis.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Jean" required />
+              <span class="form-error">Veuillez entrer votre prénom.</span>
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Dupont" required />
+              <span class="form-error">Veuillez entrer votre nom.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="telephone">Téléphone *</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="06 XX XX XX XX" required />
+            <span class="form-error">Veuillez entrer un numéro valide.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jean.dupont@email.com" />
+            <span class="form-error">Adresse email invalide.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Type de travaux *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Sélectionnez un service…</option>
+              <option value="maconnerie">Maçonnerie générale</option>
+              <option value="demolition">Démolition</option>
+              <option value="isolation">Isolation extérieure / intérieure</option>
+              <option value="ouverture">Ouverture &amp; coffrage</option>
+              <option value="autre">Autre / Je ne sais pas encore</option>
+            </select>
+            <span class="form-error">Veuillez sélectionner un service.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="ville">Ville *</label>
+            <input type="text" id="ville" name="ville" placeholder="Nevers, Varennes-Vauzelles…" required />
+            <span class="form-error">Veuillez indiquer votre ville.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Description du projet *</label>
+            <textarea id="message" name="message" placeholder="Décrivez vos travaux, la superficie, vos contraintes ou questions…" required></textarea>
+            <span class="form-error">Veuillez décrire votre projet.</span>
+          </div>
+
+          <button type="submit" class="btn btn-yellow" style="width:100%;justify-content:center;font-size:1.05rem;">
+            🚀 Envoyer ma demande de devis
+          </button>
+
+          <div id="form-success" class="form-success">
+            ✅ Votre demande a bien été envoyée ! Nous vous répondrons sous 24h. Merci de votre confiance.
+          </div>
+
+          <p style="font-size:0.78rem;color:var(--grey3);margin-top:14px;text-align:center;">
+            Sans engagement — Réponse garantie sous 24h à 48h
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── MAP PLACEHOLDER ──────────────────────────────────────── -->
+<section class="section section-darker" style="padding:60px 0;">
+  <div class="container">
+    <span class="section-label reveal">Zone d'intervention</span>
+    <h2 class="section-title reveal">Nevers &amp; <span class="yellow">ses alentours</span></h2>
+    <p class="section-intro reveal">YNS LAZARO intervient sur Nevers et toutes les communes voisines de la Nièvre : Varennes-Vauzelles, Fourchambault, Sermoise-sur-Loire, Saint-Éloi, Marzy, Coulanges-lès-Nevers et bien d'autres.</p>
+    <div class="reveal" style="background:var(--dark3);border:1px solid rgba(255,255,255,0.06);border-radius:6px;height:320px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+      <div style="text-align:center;z-index:2;position:relative;">
+        <div style="font-size:3rem;margin-bottom:12px;">📍</div>
+        <div style="font-family:var(--font-display);font-size:1.3rem;font-weight:900;letter-spacing:0.04em;color:var(--yellow);">NEVERS (58)</div>
+        <div style="font-size:0.9rem;color:var(--grey3);margin-top:4px;">Zone d'intervention : Nièvre &amp; alentours</div>
+        <a href="https://maps.google.com/?q=Nevers+58000" target="_blank" rel="noopener" class="btn btn-yellow btn-sm" style="margin-top:20px;display:inline-flex;">
+          Voir sur Google Maps
+        </a>
+      </div>
+      <!-- decorative dots -->
+      <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(245,197,24,0.05) 0%, transparent 70%);pointer-events:none;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-name">YNS <span>LAZARO</span></span>
+          <span class="logo-sub">Maçonnerie & Bâtiment</span>
+        </a>
+        <p>Entreprise de maçonnerie et bâtiment basée à Nevers. Travail soigné, devis gratuit, intervention rapide.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/yns_lazaro58" target="_blank" rel="noopener" class="social-btn">📸</a>
+          <a href="tel:0749457567" class="social-btn">📞</a>
+          <a href="mailto:varto58@outlook.com" class="social-btn">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Nos Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Contact &amp; Devis</a></li>
+          <li><a href="mentions-legales.html">Mentions Légales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#maconnerie">Maçonnerie Générale</a></li>
+          <li><a href="services.html#demolition">Démolition</a></li>
+          <li><a href="services.html#isolation">Isolation Ext. &amp; Int.</a></li>
+          <li><a href="services.html#ouverture">Ouverture &amp; Coffrage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">📞 <a href="tel:0749457567">07 49 45 75 67</a></div>
+        <div class="footer-contact-item">✉️ <a href="mailto:varto58@outlook.com">varto58@outlook.com</a></div>
+        <div class="footer-contact-item">📍 Nevers &amp; alentours (58)</div>
+        <div class="footer-contact-item">🗓️ Lundi — Samedi</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 YNS LAZARO — Tous droits réservés</span>
+      <div class="footer-bottom-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="contact.html">Devis gratuit</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="tel:0749457567">📞 Appeler maintenant — 07 49 45 75 67</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
