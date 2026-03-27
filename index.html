@@ -2,323 +2,377 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>YNS LAZARO — Maçonnerie Générale | Nevers & Alentours</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YNS LAZARO – Maçonnerie & Bâtiment à Nevers | Devis Gratuit</title>
+  <meta name="description" content="YNS LAZARO, entreprise de maçonnerie générale, isolation, démolition et ouverture à Nevers et alentours. Devis gratuit, intervention rapide. Appelez le 07 49 45 75 67." />
+  <meta name="keywords" content="maçonnerie Nevers, isolation Nevers, démolition Nevers, entreprise bâtiment Nevers, devis maçonnerie, YNS LAZARO" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
 
-  <!-- HEADER / NAV -->
-  <header id="header">
-    <div class="header-inner">
-      <div class="logo">
-        <span class="logo-yns">YNS</span>
-        <span class="logo-lazaro">LAZARO</span>
-      </div>
-      <nav>
-        <a href="#services">Services</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
-        <a href="#devis" class="nav-cta">Devis gratuit</a>
-      </nav>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
+<!-- ── HEADER ──────────────────────────────────────────────── -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-name">YNS <span>LAZARO</span></span>
+      <span class="logo-sub">Maçonnerie & Bâtiment</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html">Réalisations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-outline btn-sm">Devis gratuit</a>
+      <a href="tel:0749457567" class="btn btn-yellow btn-sm">📞 07 49 45 75 67</a>
     </div>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#services" class="mob-link">Services</a>
-      <a href="#about" class="mob-link">À propos</a>
-      <a href="#contact" class="mob-link">Contact</a>
-      <a href="#devis" class="mob-link mob-cta">Devis gratuit</a>
+    <div class="hamburger" role="button" aria-label="Menu">
+      <span></span><span></span><span></span>
     </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80" alt="Chantier maçonnerie" class="hero-img" />
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-tag">Nevers &amp; Alentours · Lundi – Samedi</p>
-      <h1 class="hero-title">
-        <span class="line1">MAÇONNERIE</span>
-        <span class="line2">GÉNÉRALE</span>
-      </h1>
-      <p class="hero-sub">Démolition · Isolation · Ouverture &amp; Coffrage</p>
-      <div class="hero-actions">
-        <a href="#devis" class="btn btn-primary">Demander un devis</a>
-        <a href="tel:0749457567" class="btn btn-outline">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-          07 49 45 75 67
-        </a>
-      </div>
-    </div>
-    <div class="scroll-hint">
-      <span>Découvrir</span>
-      <div class="scroll-arrow"></div>
-    </div>
-  </section>
-
-  <!-- BANDE STATS -->
-  <div class="stats-bar">
-    <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Artisan local</span></div>
-    <div class="stat-sep"></div>
-    <div class="stat"><span class="stat-num">4</span><span class="stat-label">Domaines d'expertise</span></div>
-    <div class="stat-sep"></div>
-    <div class="stat"><span class="stat-num">0€</span><span class="stat-label">Devis gratuit</span></div>
-    <div class="stat-sep"></div>
-    <div class="stat"><span class="stat-num">6j/7</span><span class="stat-label">Disponibilité</span></div>
   </div>
+</header>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-label">Ce que nous faisons</div>
-      <h2 class="section-title">Nos <em>expertises</em></h2>
+<!-- ── MOBILE NAV ───────────────────────────────────────────── -->
+<nav class="mobile-nav">
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="realisations.html">Réalisations</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:0749457567" class="btn btn-yellow">📞 Appeler maintenant</a>
+</nav>
 
-      <div class="services-grid">
-
-        <div class="service-card" style="--delay:0s">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=75" alt="Maçonnerie générale" />
-          </div>
-          <div class="card-body">
-            <span class="card-num">01</span>
-            <h3>Maçonnerie générale</h3>
-            <p>Construction de murs, dalles, fondations et tous travaux de gros œuvre pour vos projets résidentiels ou professionnels.</p>
-          </div>
-        </div>
-
-        <div class="service-card" style="--delay:.1s">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=75" alt="Démolition" />
-          </div>
-          <div class="card-body">
-            <span class="card-num">02</span>
-            <h3>Démolition</h3>
-            <p>Démolition partielle ou totale, cloisons, murs porteurs avec étayage, évacuation des gravats dans les règles de l'art.</p>
-          </div>
-        </div>
-
-        <div class="service-card" style="--delay:.2s">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1590725140246-20acdee442be?w=800&q=75" alt="Isolation" />
-          </div>
-          <div class="card-body">
-            <span class="card-num">03</span>
-            <h3>Isolation ext. &amp; int.</h3>
-            <p>Isolation thermique par l'extérieur (ITE) et par l'intérieur pour améliorer votre confort et réduire votre facture énergétique.</p>
-          </div>
-        </div>
-
-        <div class="service-card" style="--delay:.3s">
-          <div class="card-img-wrap">
-            <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?w=800&q=75" alt="Ouverture coffrage" />
-          </div>
-          <div class="card-body">
-            <span class="card-num">04</span>
-            <h3>Ouverture &amp; coffrage</h3>
-            <p>Création d'ouvertures (portes, fenêtres), pose de linteaux, coffrage béton et finitions soignées pour chaque réalisation.</p>
-          </div>
-        </div>
-
+<!-- ── HERO ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-stripe"></div>
+  <div class="container hero-content">
+    <div class="hero-badge">⚡ Devis gratuit &amp; réponse rapide</div>
+    <h1>Votre projet<br><span class="yellow">bâtiment</span><br>entre de bons mains</h1>
+    <p>Maçonnerie, isolation, démolition et ouverture à Nevers et ses alentours. Travail soigné, délais respectés, tarifs transparents.</p>
+    <div class="hero-ctas">
+      <a href="contact.html" class="btn btn-yellow btn-call">🏗️ Demander un devis</a>
+      <a href="tel:0749457567" class="btn btn-outline">📞 07 49 45 75 67</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span data-count="8" data-suffix="+">0+</span>
+        <p>Années d'expérience</p>
+      </div>
+      <div class="hero-stat">
+        <span data-count="200" data-suffix="+">0+</span>
+        <p>Chantiers réalisés</p>
+      </div>
+      <div class="hero-stat">
+        <span data-count="100" data-suffix="%">0%</span>
+        <p>Clients satisfaits</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- GALERIE PHOTO -->
-  <section class="gallery" id="gallery">
+<!-- ── TRUST BAR ────────────────────────────────────────────── -->
+<div class="trust-bar">
+  <div class="trust-scroll">
+    <span class="trust-item">⭐ Devis 100% Gratuit</span>
+    <span class="trust-item">🔨 Maçonnerie Générale</span>
+    <span class="trust-item">🏗️ Isolation Intérieure &amp; Extérieure</span>
+    <span class="trust-item">💥 Démolition</span>
+    <span class="trust-item">📍 Nevers &amp; Alentours</span>
+    <span class="trust-item">📞 Réponse Rapide</span>
+    <span class="trust-item">✅ Travail Soigné &amp; Garanti</span>
+    <span class="trust-item">🗓️ Lundi au Samedi</span>
+  </div>
+</div>
+
+<!-- ── SERVICES OVERVIEW ────────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <span class="section-label reveal">Nos Expertises</span>
+    <h2 class="section-title reveal">Ce que nous<br>réalisons <span class="yellow">pour vous</span></h2>
+    <p class="section-intro reveal">De la maçonnerie à l'isolation, en passant par la démolition et l'ouverture, YNS LAZARO intervient sur tous vos projets de construction et rénovation à Nevers.</p>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">🧱</div>
+        <h3>Maçonnerie Générale</h3>
+        <p>Construction de murs, dalles, fondations, enduits et finitions. Chaque ouvrage réalisé avec soin et matériaux de qualité.</p>
+        <a href="services.html#maconnerie" class="service-link">En savoir plus →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">💥</div>
+        <h3>Démolition</h3>
+        <p>Démolition partielle ou totale de structures, cloisons, planchers. Intervention propre et sécurisée sur tous types de bâtiments.</p>
+        <a href="services.html#demolition" class="service-link">En savoir plus →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🛡️</div>
+        <h3>Isolation Extérieure &amp; Intérieure</h3>
+        <p>Isolation thermique et phonique pour réduire vos factures d'énergie et améliorer votre confort au quotidien.</p>
+        <a href="services.html#isolation" class="service-link">En savoir plus →</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🚪</div>
+        <h3>Ouverture &amp; Coffrage</h3>
+        <p>Création d'ouvertures (portes, fenêtres, baies), pose de linteaux et coffrage de structures selon les normes en vigueur.</p>
+        <a href="services.html#ouverture" class="service-link">En savoir plus →</a>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px;" class="reveal">
+      <a href="services.html" class="btn btn-outline">Voir tous nos services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ────────────────────────────────────────────────── -->
+<section class="section section-darker">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-image reveal">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80" alt="Chantier maçonnerie Nevers YNS LAZARO" loading="lazy" />
+        <div class="why-image-badge">
+          <div class="num" data-count="8" data-suffix="+">8+</div>
+          <div class="label">Ans<br>d'expérience</div>
+        </div>
+      </div>
+      <div>
+        <span class="section-label reveal">Pourquoi nous choisir</span>
+        <h2 class="section-title reveal">Une entreprise<br><span class="yellow">sérieuse</span> &amp; locale</h2>
+        <p class="section-intro reveal" style="margin-bottom:36px;">Depuis des années, YNS LAZARO accompagne les particuliers et professionnels de Nevers et ses alentours dans leurs projets de construction et rénovation.</p>
+        <div class="why-args">
+          <div class="why-arg reveal">
+            <div class="why-arg-icon">⚡</div>
+            <div>
+              <h4>Réactivité garantie</h4>
+              <p>Nous répondons rapidement à chaque demande. Votre devis est établi sous 24h à 48h, sans engagement de votre part.</p>
+            </div>
+          </div>
+          <div class="why-arg reveal">
+            <div class="why-arg-icon">🏆</div>
+            <div>
+              <h4>Qualité professionnelle</h4>
+              <p>Chaque chantier est réalisé dans le respect des normes et avec des matériaux sélectionnés pour leur durabilité.</p>
+            </div>
+          </div>
+          <div class="why-arg reveal">
+            <div class="why-arg-icon">📍</div>
+            <div>
+              <h4>Ancrage local – Nevers</h4>
+              <p>Entreprise locale, nous connaissons le territoire et intervenons rapidement sur Nevers et toute la région alentour.</p>
+            </div>
+          </div>
+          <div class="why-arg reveal">
+            <div class="why-arg-icon">💬</div>
+            <div>
+              <h4>Transparence &amp; écoute</h4>
+              <p>Pas de surprise sur la facture. Nous vous expliquons chaque étape et restons disponibles tout au long du chantier.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ─────────────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <span class="section-label reveal">Avis clients</span>
+    <h2 class="section-title reveal">Ils nous font <span class="yellow">confiance</span></h2>
+    <p class="section-intro reveal">Des dizaines de clients satisfaits à Nevers et dans les communes voisines. Lisez leurs témoignages.</p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Travail impeccable sur notre isolation extérieure. L'équipe a été ponctuelle, propre et très professionnelle. Je recommande sans hésiter YNS LAZARO à tous mes proches de Nevers.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">M</div>
+          <div>
+            <div class="author-name">Marie T.</div>
+            <div class="author-loc">Nevers (58)</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Démolition d'une cloison et création d'une ouverture réalisées en une journée. Résultat parfait, chantier laissé propre. Devis rapide et prix honnête. Bravo !</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">P</div>
+          <div>
+            <div class="author-name">Pierre D.</div>
+            <div class="author-loc">Varennes-Vauzelles</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Excellente entreprise de maçonnerie. Le devis a été établi très rapidement et les travaux ont commencé dans les délais annoncés. Qualité du travail au rendez-vous.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div>
+            <div class="author-name">Sophie L.</div>
+            <div class="author-loc">Sermoise-sur-Loire</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">J'ai fait appel à YNS LAZARO pour une réfection complète d'un mur de façade. Travail de qualité, équipe sérieuse et tarifs compétitifs. Je suis pleinement satisfait.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">J</div>
+          <div>
+            <div class="author-name">Jean-Marc B.</div>
+            <div class="author-loc">Fourchambault</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Isolation intérieure de notre maison réalisée avec soin. On ressent déjà la différence sur la facture de chauffage. Merci à toute l'équipe pour leur professionnalisme.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">C</div>
+          <div>
+            <div class="author-name">Clara &amp; Yoann M.</div>
+            <div class="author-loc">Nevers (58)</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <div class="stars">★★★★★</div>
+        <p class="testimonial-text">Très bon contact, réponse rapide au devis. Les travaux de maçonnerie ont été réalisés dans les règles de l'art. Je recommande cette entreprise locale à 100%.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <div class="author-name">Romain V.</div>
+            <div class="author-loc">Saint-Éloi</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ───────────────────────────────────────────── -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner">
+      <div>
+        <h2>Votre projet commence<br>par un devis gratuit</h2>
+        <p>Contactez-nous dès aujourd'hui — réponse sous 24h garantie</p>
+      </div>
+      <div class="cta-banner-buttons">
+        <a href="contact.html" class="btn btn-dark">🏗️ Demander un devis</a>
+        <a href="tel:0749457567" class="btn btn-white">📞 07 49 45 75 67</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY PREVIEW ──────────────────────────────────────── -->
+<section class="section section-darker">
+  <div class="container">
+    <span class="section-label reveal">Nos Réalisations</span>
+    <h2 class="section-title reveal">Découvrez <span class="yellow">nos chantiers</span></h2>
+    <p class="section-intro reveal">Quelques exemples de travaux réalisés à Nevers et ses environs.</p>
+
     <div class="gallery-grid">
-      <div class="gal-item gal-large">
-        <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1000&q=80" alt="Chantier" />
-        <div class="gal-overlay"><span>Gros œuvre</span></div>
+      <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1590585066997-6af6ab3feb68?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1590585066997-6af6ab3feb68?w=700&q=75" alt="Chantier maçonnerie" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Travaux de maçonnerie</h4><span>Nevers</span></div>
       </div>
-      <div class="gal-item">
-        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=75" alt="Maçonnerie" />
-        <div class="gal-overlay"><span>Maçonnerie</span></div>
+      <div class="gallery-item tall reveal" data-src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=700&q=75" alt="Isolation extérieure" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Isolation extérieure</h4><span>Varennes-Vauzelles</span></div>
       </div>
-      <div class="gal-item">
-        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=75" alt="Rénovation" />
-        <div class="gal-overlay"><span>Rénovation</span></div>
+      <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=75" alt="Chantier bâtiment" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Construction &amp; maçonnerie</h4><span>Nevers</span></div>
       </div>
-      <div class="gal-item">
-        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=75" alt="Isolation" />
-        <div class="gal-overlay"><span>Isolation</span></div>
+      <div class="gallery-item wide reveal" data-src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&q=75" alt="Ouverture et coffrage" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Ouverture &amp; coffrage</h4><span>Fourchambault</span></div>
       </div>
-      <div class="gal-item gal-wide">
-        <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200&q=80" alt="Chantier bâtiment" />
-        <div class="gal-overlay"><span>Construction</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- À PROPOS -->
-  <section class="about" id="about">
-    <div class="container about-inner">
-      <div class="about-img-col">
-        <div class="about-img-frame">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Artisan YNS Lazaro" />
-        </div>
-        <div class="about-badge">
-          <span class="badge-big">Nevers</span>
-          <span class="badge-small">&amp; Alentours</span>
-        </div>
-      </div>
-      <div class="about-text-col">
-        <div class="section-label">À propos</div>
-        <h2 class="section-title">Un artisan <em>de confiance</em></h2>
-        <p>YNS LAZARO, c'est un artisan passionné implanté à Nevers et ses alentours, engagé dans chaque chantier avec rigueur et professionnalisme. Que ce soit pour une rénovation complète, une démolition ou une amélioration thermique, nous mettons notre savoir-faire à votre service.</p>
-        <p>Disponible <strong>du lundi au samedi</strong>, nous répondons rapidement à vos demandes et intervenons dans les meilleurs délais.</p>
-        <div class="about-pills">
-          <span class="pill">Nevers 58</span>
-          <span class="pill">Devis rapide</span>
-          <span class="pill">Travaux soignés</span>
-          <span class="pill">Lun – Sam</span>
-        </div>
-        <div class="about-socials">
-          <a href="https://www.instagram.com/yns_lazaro58" target="_blank" class="insta-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            @yns_lazaro58
-          </a>
-        </div>
+      <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=700&q=75" alt="Démolition chantier" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Démolition</h4><span>Sermoise-sur-Loire</span></div>
       </div>
     </div>
-  </section>
 
-  <!-- CONTACT + DEVIS -->
-  <section class="contact-section" id="contact">
-    <div class="container contact-inner">
-
-      <div class="contact-info">
-        <div class="section-label light">Contact</div>
-        <h2 class="section-title light">Parlons de <em>votre projet</em></h2>
-        <div class="contact-items">
-          <a href="tel:0749457567" class="contact-item">
-            <div class="ci-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            </div>
-            <div class="ci-text">
-              <span class="ci-label">Téléphone</span>
-              <span class="ci-val">07 49 45 75 67</span>
-            </div>
-          </a>
-          <a href="mailto:varto58@outlook.com" class="contact-item">
-            <div class="ci-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <div class="ci-text">
-              <span class="ci-label">Email</span>
-              <span class="ci-val">varto58@outlook.com</span>
-            </div>
-          </a>
-          <div class="contact-item">
-            <div class="ci-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div class="ci-text">
-              <span class="ci-label">Zone d'intervention</span>
-              <span class="ci-val">Nevers &amp; Alentours (58)</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="ci-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <div class="ci-text">
-              <span class="ci-label">Horaires</span>
-              <span class="ci-val">Lundi au Samedi</span>
-            </div>
-          </div>
-        </div>
-        <a href="https://www.instagram.com/yns_lazaro58" target="_blank" class="insta-link insta-light">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          Suivre sur Instagram
-        </a>
-      </div>
-
-      <!-- DEVIS FORM -->
-      <div class="devis-form" id="devis">
-        <h3 class="form-title">Demande de devis gratuit</h3>
-        <form id="devisForm">
-          <div class="field-row">
-            <div class="field">
-              <label>Prénom & Nom</label>
-              <input type="text" name="nom" placeholder="Jean Dupont" required />
-            </div>
-            <div class="field">
-              <label>Téléphone</label>
-              <input type="tel" name="tel" placeholder="06 00 00 00 00" required />
-            </div>
-          </div>
-          <div class="field">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="vous@email.com" />
-          </div>
-          <div class="field">
-            <label>Type de travaux</label>
-            <select name="travaux">
-              <option value="">-- Choisir --</option>
-              <option>Maçonnerie générale</option>
-              <option>Démolition</option>
-              <option>Isolation extérieure</option>
-              <option>Isolation intérieure</option>
-              <option>Ouverture & Coffrage</option>
-              <option>Autre</option>
-            </select>
-          </div>
-          <div class="field">
-            <label>Décrivez votre projet</label>
-            <textarea name="message" rows="4" placeholder="Décrivez votre projet, la surface, les contraintes..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary full">
-            Envoyer ma demande
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          </button>
-        </form>
-        <div class="form-success" id="formSuccess">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <h4>Demande envoyée !</h4>
-          <p>Nous vous recontacterons très rapidement.</p>
-        </div>
-      </div>
-
+    <div style="text-align:center;margin-top:40px;" class="reveal">
+      <a href="realisations.html" class="btn btn-outline">Voir toutes les réalisations</a>
     </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-logo">
-        <span class="logo-yns">YNS</span>
-        <span class="logo-lazaro">LAZARO</span>
-      </div>
-      <p class="footer-tagline">Maçonnerie générale · Nevers &amp; Alentours</p>
-      <div class="footer-links">
-        <a href="tel:0749457567">07 49 45 75 67</a>
-        <span>·</span>
-        <a href="mailto:varto58@outlook.com">varto58@outlook.com</a>
-        <span>·</span>
-        <a href="https://www.instagram.com/yns_lazaro58" target="_blank">@yns_lazaro58</a>
-      </div>
-      <p class="footer-copy">© 2025 YNS LAZARO — Tous droits réservés</p>
-    </div>
-  </footer>
-
-  <!-- FLOATING CTA -->
-  <div class="float-cta" id="floatCta">
-    <a href="tel:0749457567" class="float-btn float-call">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-      <span>Appeler</span>
-    </a>
-    <a href="#devis" class="float-btn float-devis">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-      <span>Devis</span>
-    </a>
   </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-name">YNS <span>LAZARO</span></span>
+          <span class="logo-sub">Maçonnerie & Bâtiment</span>
+        </a>
+        <p>Entreprise de maçonnerie et bâtiment basée à Nevers. Travail soigné, devis gratuit, intervention rapide dans tout le département.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/yns_lazaro58" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">📸</a>
+          <a href="tel:0749457567" class="social-btn" aria-label="Téléphone">📞</a>
+          <a href="mailto:varto58@outlook.com" class="social-btn" aria-label="Email">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Nos Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Contact &amp; Devis</a></li>
+          <li><a href="mentions-legales.html">Mentions Légales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#maconnerie">Maçonnerie Générale</a></li>
+          <li><a href="services.html#demolition">Démolition</a></li>
+          <li><a href="services.html#isolation">Isolation Ext. &amp; Int.</a></li>
+          <li><a href="services.html#ouverture">Ouverture &amp; Coffrage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">📞 <a href="tel:0749457567">07 49 45 75 67</a></div>
+        <div class="footer-contact-item">✉️ <a href="mailto:varto58@outlook.com">varto58@outlook.com</a></div>
+        <div class="footer-contact-item">📍 Nevers &amp; alentours (58)</div>
+        <div class="footer-contact-item">🗓️ Lundi — Samedi</div>
+        <div class="footer-contact-item">📸 <a href="https://www.instagram.com/yns_lazaro58" target="_blank">@yns_lazaro58</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 YNS LAZARO — Tous droits réservés</span>
+      <div class="footer-bottom-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="contact.html">Devis gratuit</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── LIGHTBOX ─────────────────────────────────────────────── -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">✕</span>
+  <img id="lightbox-img" src="" alt="Réalisation YNS LAZARO" />
+</div>
+
+<!-- ── STICKY MOBILE CTA ────────────────────────────────────── -->
+<div class="sticky-cta">
+  <a href="tel:0749457567">📞 Appeler maintenant — 07 49 45 75 67</a>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
