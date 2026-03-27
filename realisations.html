@@ -1,1 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos Réalisations – Chantiers &amp; Galerie | YNS LAZARO Nevers</title>
+  <meta name="description" content="Découvrez les réalisations de YNS LAZARO : maçonnerie, isolation, démolition, ouvertures à Nevers et environs. Photos de chantiers, avant/après. Devis gratuit." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 10px 22px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--grey3);
+      cursor: pointer;
+      transition: var(--transition);
+      background: transparent;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--yellow);
+      border-color: var(--yellow);
+      color: var(--black);
+    }
+    .gallery-full {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+    .gallery-full .gallery-item img { height: 260px; }
+    .gallery-full .gallery-item.tall img { height: 530px; }
+    @media (max-width: 768px) {
+      .gallery-full { grid-template-columns: 1fr 1fr; }
+      .gallery-full .gallery-item.tall img { height: 260px; }
+    }
+    @media (max-width: 480px) {
+      .gallery-full { grid-template-columns: 1fr; }
+    }
+    .before-after-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 768px) {
+      .before-after-grid { grid-template-columns: 1fr; }
+    }
+    .ba-card {
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .ba-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .ba-img-wrap { position: relative; overflow: hidden; }
+    .ba-img-wrap img { width: 100%; height: 200px; object-fit: cover; display: block; filter: brightness(0.8); }
+    .ba-label {
+      position: absolute;
+      top: 10px; left: 10px;
+      background: rgba(0,0,0,0.75);
+      color: var(--white);
+      font-family: var(--font-display);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 3px;
+    }
+    .ba-label.after { background: var(--yellow); color: var(--black); }
+    .ba-divider {
+      width: 2px;
+      background: var(--yellow);
+    }
+    .ba-info { padding: 20px 24px; }
+    .ba-info h4 { margin-bottom: 4px; }
+    .ba-info p { font-size: 0.85rem; color: var(--grey3); }
+    .ba-tag {
+      display: inline-block;
+      background: rgba(245,197,24,0.1);
+      color: var(--yellow);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+      margin-bottom: 8px;
+      border: 1px solid rgba(245,197,24,0.2);
+    }
+  </style>
+</head>
+<body>
 
+<!-- ── HEADER ──────────────────────────────────────────────── -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-name">YNS <span>LAZARO</span></span>
+      <span class="logo-sub">Maçonnerie & Bâtiment</span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="realisations.html" class="active">Réalisations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-outline btn-sm">Devis gratuit</a>
+      <a href="tel:0749457567" class="btn btn-yellow btn-sm">📞 07 49 45 75 67</a>
+    </div>
+    <div class="hamburger" role="button" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+<nav class="mobile-nav">
+  <a href="index.html">Accueil</a>
+  <a href="services.html">Services</a>
+  <a href="realisations.html">Réalisations</a>
+  <a href="contact.html">Contact</a>
+  <a href="tel:0749457567" class="btn btn-yellow">📞 Appeler maintenant</a>
+</nav>
+
+<!-- ── PAGE HERO ────────────────────────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span>/</span>
+      <span>Réalisations</span>
+    </div>
+    <span class="section-label">Portfolio</span>
+    <h1>Nos <span class="yellow">Réalisations</span></h1>
+    <p style="color:var(--grey3);max-width:560px;margin-top:16px;">Des dizaines de chantiers menés à Nevers et ses environs. Maçonnerie, isolation, démolition, ouverture — découvrez notre savoir-faire en images.</p>
+  </div>
+</section>
+
+<!-- ── GALLERY ──────────────────────────────────────────────── -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">Tout voir</button>
+      <button class="filter-btn" data-filter="maconnerie">Maçonnerie</button>
+      <button class="filter-btn" data-filter="isolation">Isolation</button>
+      <button class="filter-btn" data-filter="demolition">Démolition</button>
+      <button class="filter-btn" data-filter="ouverture">Ouverture</button>
+    </div>
+
+    <div class="gallery-full">
+      <div class="gallery-item reveal" data-category="maconnerie" data-src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=75" alt="Maçonnerie mur parpaing" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Mur en parpaing</h4><span>Maçonnerie — Nevers</span></div>
+      </div>
+      <div class="gallery-item tall reveal" data-category="isolation" data-src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=700&q=75" alt="Isolation extérieure" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Isolation extérieure</h4><span>ITE — Varennes-Vauzelles</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="demolition" data-src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=700&q=75" alt="Démolition chantier" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Démolition de cloisons</h4><span>Démolition — Nevers</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="ouverture" data-src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=700&q=75" alt="Ouverture baie vitrée" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Création de baie vitrée</h4><span>Ouverture — Fourchambault</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="maconnerie" data-src="https://images.unsplash.com/photo-1590585066997-6af6ab3feb68?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1590585066997-6af6ab3feb68?w=700&q=75" alt="Chantier maçonnerie" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Travaux de fondations</h4><span>Maçonnerie — Saint-Éloi</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="maconnerie" data-src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=700&q=75" alt="Chantier rénovation" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Rénovation de façade</h4><span>Maçonnerie — Sermoise</span></div>
+      </div>
+      <div class="gallery-item tall reveal" data-category="maconnerie" data-src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=700&q=75" alt="Construction bâtiment" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Construction neuve</h4><span>Maçonnerie — Nevers</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="isolation" data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=75" alt="Isolation thermique" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Isolation des combles</h4><span>Isolation — Nevers</span></div>
+      </div>
+      <div class="gallery-item reveal" data-category="ouverture" data-src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=1200&q=80">
+        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=700&q=75" alt="Ouverture mur porteur" loading="lazy" />
+        <div class="gallery-item-overlay"><h4>Ouverture mur porteur</h4><span>Ouverture — Marzy</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AVANT / APRÈS ────────────────────────────────────────── -->
+<section class="section section-darker">
+  <div class="container">
+    <span class="section-label reveal">Transformation</span>
+    <h2 class="section-title reveal">Avant <span class="yellow">&amp; Après</span></h2>
+    <p class="section-intro reveal">La qualité de notre travail se voit. Quelques exemples de transformations réalisées chez nos clients à Nevers et dans les communes voisines.</p>
+
+    <div class="before-after-grid">
+      <div class="ba-card reveal">
+        <div class="ba-images">
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=70" alt="Avant isolation" loading="lazy" />
+            <span class="ba-label">Avant</span>
+          </div>
+          <div class="ba-divider"></div>
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?w=500&q=70" alt="Après isolation" loading="lazy" />
+            <span class="ba-label after">Après</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <span class="ba-tag">Isolation</span>
+          <h4>Isolation extérieure complète</h4>
+          <p>Maison individuelle à Nevers — Gain thermique significatif, finition crépi blanc</p>
+        </div>
+      </div>
+
+      <div class="ba-card reveal">
+        <div class="ba-images">
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=500&q=70" alt="Avant démolition" loading="lazy" />
+            <span class="ba-label">Avant</span>
+          </div>
+          <div class="ba-divider"></div>
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=500&q=70" alt="Après ouverture" loading="lazy" />
+            <span class="ba-label after">Après</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <span class="ba-tag">Démolition &amp; Ouverture</span>
+          <h4>Création d'une grande ouverture</h4>
+          <p>Cloison abattue, ouverture créée avec linteau béton — Fourchambault</p>
+        </div>
+      </div>
+
+      <div class="ba-card reveal">
+        <div class="ba-images">
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=70" alt="Avant maçonnerie" loading="lazy" />
+            <span class="ba-label">Avant</span>
+          </div>
+          <div class="ba-divider"></div>
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1590585066997-6af6ab3feb68?w=500&q=70" alt="Après maçonnerie" loading="lazy" />
+            <span class="ba-label after">Après</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <span class="ba-tag">Maçonnerie</span>
+          <h4>Réfection complète de façade</h4>
+          <p>Reprise d'enduit, rejointoyage et finition — Sermoise-sur-Loire</p>
+        </div>
+      </div>
+
+      <div class="ba-card reveal">
+        <div class="ba-images">
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&q=70" alt="Avant construction" loading="lazy" />
+            <span class="ba-label">Avant</span>
+          </div>
+          <div class="ba-divider"></div>
+          <div class="ba-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=70" alt="Après construction" loading="lazy" />
+            <span class="ba-label after">Après</span>
+          </div>
+        </div>
+        <div class="ba-info">
+          <span class="ba-tag">Maçonnerie</span>
+          <h4>Extension de maison</h4>
+          <p>Fondations, élévation de murs, dalle béton — Varennes-Vauzelles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA BANNER ───────────────────────────────────────────── -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-banner-inner">
+      <div>
+        <h2>Votre chantier<br>dans notre galerie ?</h2>
+        <p>Contactez-nous pour un devis gratuit et rapide</p>
+      </div>
+      <div class="cta-banner-buttons">
+        <a href="contact.html" class="btn btn-dark">🏗️ Demander un devis</a>
+        <a href="tel:0749457567" class="btn btn-white">📞 07 49 45 75 67</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-name">YNS <span>LAZARO</span></span>
+          <span class="logo-sub">Maçonnerie & Bâtiment</span>
+        </a>
+        <p>Entreprise de maçonnerie et bâtiment basée à Nevers. Travail soigné, devis gratuit, intervention rapide.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/yns_lazaro58" target="_blank" rel="noopener" class="social-btn">📸</a>
+          <a href="tel:0749457567" class="social-btn">📞</a>
+          <a href="mailto:varto58@outlook.com" class="social-btn">✉️</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Nos Services</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="contact.html">Contact &amp; Devis</a></li>
+          <li><a href="mentions-legales.html">Mentions Légales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="services.html#maconnerie">Maçonnerie Générale</a></li>
+          <li><a href="services.html#demolition">Démolition</a></li>
+          <li><a href="services.html#isolation">Isolation Ext. &amp; Int.</a></li>
+          <li><a href="services.html#ouverture">Ouverture &amp; Coffrage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">📞 <a href="tel:0749457567">07 49 45 75 67</a></div>
+        <div class="footer-contact-item">✉️ <a href="mailto:varto58@outlook.com">varto58@outlook.com</a></div>
+        <div class="footer-contact-item">📍 Nevers &amp; alentours (58)</div>
+        <div class="footer-contact-item">🗓️ Lundi — Samedi</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 YNS LAZARO — Tous droits réservés</span>
+      <div class="footer-bottom-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="contact.html">Devis gratuit</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">✕</span>
+  <img id="lightbox-img" src="" alt="Réalisation YNS LAZARO" />
+</div>
+
+<div class="sticky-cta">
+  <a href="tel:0749457567">📞 Appeler maintenant — 07 49 45 75 67</a>
+</div>
+
+<script src="script.js"></script>
+<script>
+// Filter gallery
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    document.querySelectorAll('.gallery-item[data-category]').forEach(item => {
+      if (filter === 'all' || item.dataset.category === filter) {
+        item.style.display = '';
+        item.style.opacity = '0';
+        item.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          item.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+          item.style.opacity = '1';
+          item.style.transform = 'scale(1)';
+        }, 30);
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+});
+</script>
+</body>
+</html>
